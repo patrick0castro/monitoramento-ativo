@@ -1,0 +1,56 @@
+.card {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .body {
+    flex: 1;
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .content {
+      margin: 2rem 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .value {
+        font-size: 2rem;
+      }
+
+      .percent {
+        position: absolute;
+        right: 10%;
+        font-size: 1.3rem;
+        &.lower {
+          color: #f00;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .values {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    .error {
+      text-align: center;
+    }
+  }
+}

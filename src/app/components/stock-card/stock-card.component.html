@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="body">
+    <ng-container *ngIf="!menssage">
+      <div class="title">{{ data.title | uppercase }}</div>
+      <div class="subtitle">{{ data.subtitle }}</div>
+      <div class="content">
+        <div class="value">{{ data.value | currency }}</div>
+        <div class="percent" [ngClass]="{ lower: data.percent! < 0 }">
+          {{ data.percent | percent : "1.2-2" }}
+        </div>
+      </div>
+      <div class="footer">
+        <div class="values">
+          <div>
+            Min. <br />
+            {{ data.valueMin | currency }}
+          </div>
+          <div>
+            Max. <br />
+            {{ data.valueMax | currency }}
+          </div>
+        </div>
+        <!-- <div class="date">20/02/2024 18:00:00</div> -->
+        <div class="date">{{ data.date | date : "dd/MM/yyyy HH:mm:ss" }}</div>
+      </div>
+    </ng-container>
+    <div class="error" *ngIf="menssage">{{ menssage }}</div>
+  </div>
+</div>
