@@ -1,0 +1,9 @@
+<ng-container *ngIf="values.length && hours.length">
+  <canvas
+    baseChart
+    class="chart"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    type="line"
+  ></canvas>
+</ng-container>

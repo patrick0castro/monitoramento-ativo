@@ -1,3 +1,4 @@
 <ng-container *ngIf="stock || menssage">
   <app-stock-card [data]="stock" [menssage]="menssage"></app-stock-card>
+  <app-stock-chart [values]="values" [hours]="hours"></app-stock-chart>
 </ng-container>

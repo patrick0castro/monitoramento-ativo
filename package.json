@@ -8,6 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "engines": {
+    "node": "18"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.1.0",
@@ -18,8 +21,11 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "chart.js": "^4.2.1",
+    "chartjs-plugin-annotation": "^2.2.1",
     "date-fns": "^2.29.3",
     "http-proxy-middleware": "^2.0.6",
+    "ng2-charts": "^4.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
